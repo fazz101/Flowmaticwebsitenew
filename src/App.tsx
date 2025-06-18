@@ -110,20 +110,20 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="space-y-2">
-              <div className="text-4xl font-bold gradient-text">500+</div>
-              <div className="text-gray-400">Businesses Automated</div>
+              <div className="text-4xl font-bold gradient-text">Fresh</div>
+              <div className="text-gray-400">Innovative Approach</div>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-bold gradient-text">95%</div>
-              <div className="text-gray-400">Client Satisfaction</div>
+              <div className="text-4xl font-bold gradient-text">100%</div>
+              <div className="text-gray-400">Commitment to Quality</div>
             </div>
             <div className="space-y-2">
               <div className="text-4xl font-bold gradient-text">24/7</div>
               <div className="text-gray-400">AI Support</div>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-bold gradient-text">3x</div>
-              <div className="text-gray-400">ROI Increase</div>
+              <div className="text-4xl font-bold gradient-text">Custom</div>
+              <div className="text-gray-400">Tailored Solutions</div>
             </div>
           </div>
         </div>
@@ -406,7 +406,7 @@ function App() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <MapPin className="h-4 w-4" />
-                  <span>San Francisco, CA</span>
+                  <span>United Kingdom</span>
                 </div>
               </div>
             </div>
