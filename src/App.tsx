@@ -11,13 +11,14 @@ import {
   TrendingUp,
   Shield,
   Clock,
-  Phone,
   Mail,
   MapPin
 } from 'lucide-react';
+import { supabase } from './lib/supabase';
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -36,12 +37,34 @@ function App() {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Handle form submission here
-    alert('Thank you for your interest! We\'ll be in touch soon.');
-    setFormData({ name: '', email: '', company: '', message: '' });
+    setIsSubmitting(true);
+
+    try {
+      const { error } = await supabase
+        .from('consultations')
+        .insert([
+          {
+            name: formData.name,
+            email: formData.email,
+            company: formData.company || null,
+            message: formData.message || null,
+          }
+        ]);
+
+      if (error) {
+        throw error;
+      }
+
+      alert('Thank you for your interest! We\'ll be in touch within 24 hours.');
+      setFormData({ name: '', email: '', company: '', message: '' });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('There was an error submitting your request. Please try again or contact us directly.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const scrollToSection = (sectionId: string) => {
@@ -288,14 +311,6 @@ function App() {
               </div>
               
               <div className="flex items-start space-x-4">
-                <Phone className="h-6 w-6 text-purple-400 mt-1" />
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">Free Consultation</h3>
-                  <p className="text-gray-400">30-minute strategy session to identify automation opportunities in your business.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
                 <Star className="h-6 w-6 text-yellow-400 mt-1" />
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Custom Solutions</h3>
@@ -307,7 +322,7 @@ function App() {
             <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-800">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">Full Name</label>
+                  <label htmlFor="name" className="block text-sm font-medium mb-2">Full Name *</label>
                   <input
                     type="text"
                     id="name"
@@ -315,13 +330,14 @@ function App() {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:border-cyan-400 focus:outline-none transition-colors"
+                    disabled={isSubmitting}
+                    className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:border-cyan-400 focus:outline-none transition-colors disabled:opacity-50"
                     placeholder="Your full name"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">Email Address</label>
+                  <label htmlFor="email" className="block text-sm font-medium mb-2">Email Address *</label>
                   <input
                     type="email"
                     id="email"
@@ -329,7 +345,8 @@ function App() {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:border-cyan-400 focus:outline-none transition-colors"
+                    disabled={isSubmitting}
+                    className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:border-cyan-400 focus:outline-none transition-colors disabled:opacity-50"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -342,7 +359,8 @@ function App() {
                     name="company"
                     value={formData.company}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:border-cyan-400 focus:outline-none transition-colors"
+                    disabled={isSubmitting}
+                    className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:border-cyan-400 focus:outline-none transition-colors disabled:opacity-50"
                     placeholder="Your company name"
                   />
                 </div>
@@ -355,17 +373,19 @@ function App() {
                     value={formData.message}
                     onChange={handleInputChange}
                     rows={4}
-                    className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:border-cyan-400 focus:outline-none transition-colors resize-none"
+                    disabled={isSubmitting}
+                    className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:border-cyan-400 focus:outline-none transition-colors resize-none disabled:opacity-50"
                     placeholder="Tell us about your automation needs..."
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-cyan-500 to-purple-600 px-8 py-4 rounded-lg text-lg font-semibold hover:from-cyan-400 hover:to-purple-500 transition-all duration-300 glow-effect flex items-center justify-center space-x-2"
+                  disabled={isSubmitting}
+                  className="w-full bg-gradient-to-r from-cyan-500 to-purple-600 px-8 py-4 rounded-lg text-lg font-semibold hover:from-cyan-400 hover:to-purple-500 transition-all duration-300 glow-effect flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  <span>Book Your Free Consultation</span>
-                  <ArrowRight className="h-5 w-5" />
+                  <span>{isSubmitting ? 'Submitting...' : 'Book Your Free Consultation'}</span>
+                  {!isSubmitting && <ArrowRight className="h-5 w-5" />}
                 </button>
               </form>
             </div>
