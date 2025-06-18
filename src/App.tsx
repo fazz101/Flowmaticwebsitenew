@@ -119,7 +119,7 @@ function App() {
             </div>
             <div className="space-y-2">
               <div className="text-4xl font-bold gradient-text">24/7</div>
-              <div className="text-gray-400">AI Support</div>
+              <div className="text-gray-400">Support</div>
             </div>
             <div className="space-y-2">
               <div className="text-4xl font-bold gradient-text">Custom</div>
