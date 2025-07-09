@@ -58,11 +58,6 @@ function App() {
               <Bot className="h-8 w-8 text-cyan-400" />
               <span className="text-xl font-bold gradient-text">Flowmatic AI</span>
             </div>
-            <div className="hidden md:flex space-x-8">
-              <button onClick={() => scrollToSection('services')} className="hover:text-cyan-400 transition-colors">Services</button>
-              <button onClick={() => scrollToSection('about')} className="hover:text-cyan-400 transition-colors">About</button>
-              <button onClick={() => scrollToSection('contact')} className="hover:text-cyan-400 transition-colors">Contact</button>
-            </div>
             <button 
               onClick={() => scrollToSection('contact')}
               className="bg-gradient-to-r from-cyan-500 to-purple-600 px-6 py-2 rounded-full hover:from-cyan-400 hover:to-purple-500 transition-all duration-300 glow-effect"
