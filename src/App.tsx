@@ -138,7 +138,7 @@ function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-800 hover:border-cyan-400 transition-all duration-300 hover:glow-effect group">
               <Bot className="h-12 w-12 text-cyan-400 mb-6 group-hover:scale-110 transition-transform" />
-              <h3 className="text-2xl font-bold mb-4">💬 Smart Chat Assistant</h3>
+              <h3 className="text-2xl font-bold mb-4">Smart Chat Assistant</h3>
               <p className="text-gray-400 mb-6">Instantly responds to client messages, answers FAQs, and guides users toward booking — 24/7.</p>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center space-x-2">
@@ -158,7 +158,7 @@ function App() {
 
             <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-800 hover:border-purple-400 transition-all duration-300 hover:glow-effect group">
               <Users className="h-12 w-12 text-purple-400 mb-6 group-hover:scale-110 transition-transform" />
-              <h3 className="text-2xl font-bold mb-4">📅 Booking Integration</h3>
+              <h3 className="text-2xl font-bold mb-4">Booking Integration</h3>
               <p className="text-gray-400 mb-6">Lets clients choose treatments and times without the back-and-forth.</p>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center space-x-2">
@@ -178,7 +178,7 @@ function App() {
 
             <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-800 hover:border-pink-400 transition-all duration-300 hover:glow-effect group">
               <Database className="h-12 w-12 text-pink-400 mb-6 group-hover:scale-110 transition-transform" />
-              <h3 className="text-2xl font-bold mb-4">🔔 Lead Follow-Up System</h3>
+              <h3 className="text-2xl font-bold mb-4">Lead Follow-Up System</h3>
               <p className="text-gray-400 mb-6">Follows up with interested prospects automatically (coming soon).</p>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center space-x-2">
@@ -198,7 +198,7 @@ function App() {
 
             <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-800 hover:border-yellow-400 transition-all duration-300 hover:glow-effect group">
               <Globe className="h-12 w-12 text-yellow-400 mb-6 group-hover:scale-110 transition-transform" />
-              <h3 className="text-2xl font-bold mb-4">📊 Performance Dashboard</h3>
+              <h3 className="text-2xl font-bold mb-4">Performance Dashboard</h3>
               <p className="text-gray-400 mb-6">Track your assistant's impact in real time.</p>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center space-x-2">
