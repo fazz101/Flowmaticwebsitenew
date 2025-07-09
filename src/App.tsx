@@ -55,7 +55,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <img src="/Flowmatic.png" alt="Flowmatic AI" className="h-12 w-12 rounded-full" />
+              <img src="/Flowmatic.png" alt="Flowmatic AI" className="h-16 w-16 rounded-full" />
             </div>
             <button 
               onClick={() => scrollToSection('contact')}
