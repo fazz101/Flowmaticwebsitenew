@@ -87,19 +87,13 @@ function App() {
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
             Your 24/7 smart assistant for clinics — capturing more bookings, replying instantly, and saving hours of admin
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <button 
               onClick={() => scrollToSection('contact')}
               className="bg-gradient-to-r from-cyan-500 to-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:from-cyan-400 hover:to-purple-500 transition-all duration-300 glow-effect flex items-center justify-center space-x-2"
             >
               <span>Get Started Today</span>
               <ArrowRight className="h-5 w-5" />
-            </button>
-            <button 
-              onClick={() => scrollToSection('services')}
-              className="border-2 border-cyan-400 px-8 py-4 rounded-full text-lg font-semibold hover:bg-cyan-400 hover:text-black transition-all duration-300 flex items-center justify-center space-x-2"
-            >
-              <span>Explore Services</span>
             </button>
           </div>
         </div>
