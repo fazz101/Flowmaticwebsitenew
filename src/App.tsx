@@ -245,8 +245,8 @@ function App() {
               <div className="bg-gradient-to-br from-purple-500 to-pink-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
                 <TrendingUp className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold">Proven Results</h3>
-              <p className="text-gray-400">Our clients see an average 3x ROI within the first 6 months of implementation.</p>
+              <h3 className="text-2xl font-bold">Converts Instantly</h3>
+              <p className="text-gray-400">Turn silent visitors into booked clients. AutoClinic Pro guides users to take action without needing staff.</p>
             </div>
 
             <div className="text-center space-y-4">
