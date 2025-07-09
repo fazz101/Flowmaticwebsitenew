@@ -128,90 +128,90 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Our <span className="gradient-text">AI Solutions</span>
+              <span className="gradient-text">AutoClinic Pro</span> Features
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Comprehensive AI automation services designed to revolutionize your business operations
+              Everything your clinic needs to capture more bookings, convert visitors, and save hours of admin — all in one assistant
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-800 hover:border-cyan-400 transition-all duration-300 hover:glow-effect group">
               <Bot className="h-12 w-12 text-cyan-400 mb-6 group-hover:scale-110 transition-transform" />
-              <h3 className="text-2xl font-bold mb-4">AI Chat Agents</h3>
-              <p className="text-gray-400 mb-6">Intelligent conversational AI that handles customer inquiries 24/7 with human-like responses</p>
+              <h3 className="text-2xl font-bold mb-4">💬 Smart Chat Assistant</h3>
+              <p className="text-gray-400 mb-6">Instantly responds to client messages, answers FAQs, and guides users toward booking — 24/7.</p>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-green-400" />
-                  <span>Natural Language Processing</span>
+                  <span>Handles Instagram, Website & WhatsApp</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-green-400" />
-                  <span>Multi-platform Integration</span>
+                  <span>Human-like conversations</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-green-400" />
-                  <span>Custom Training</span>
+                  <span>Customised to your treatments & brand</span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-800 hover:border-purple-400 transition-all duration-300 hover:glow-effect group">
               <Users className="h-12 w-12 text-purple-400 mb-6 group-hover:scale-110 transition-transform" />
-              <h3 className="text-2xl font-bold mb-4">Lead Generation</h3>
-              <p className="text-gray-400 mb-6">AI-powered lead qualification and nurturing systems that convert prospects into customers</p>
+              <h3 className="text-2xl font-bold mb-4">📅 Booking Integration</h3>
+              <p className="text-gray-400 mb-6">Lets clients choose treatments and times without the back-and-forth.</p>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-green-400" />
-                  <span>Automated Prospecting</span>
+                  <span>Sync with your current booking system</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-green-400" />
-                  <span>Lead Scoring</span>
+                  <span>Lead capture for non-bookers</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-green-400" />
-                  <span>Personalized Outreach</span>
+                  <span>Works seamlessly across platforms</span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-800 hover:border-pink-400 transition-all duration-300 hover:glow-effect group">
               <Database className="h-12 w-12 text-pink-400 mb-6 group-hover:scale-110 transition-transform" />
-              <h3 className="text-2xl font-bold mb-4">CRM Integration</h3>
-              <p className="text-gray-400 mb-6">Seamless integration with your existing CRM systems for enhanced data management</p>
+              <h3 className="text-2xl font-bold mb-4">🔔 Lead Follow-Up System</h3>
+              <p className="text-gray-400 mb-6">Follows up with interested prospects automatically (coming soon).</p>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-green-400" />
-                  <span>Data Synchronization</span>
+                  <span>Collects emails & WhatsApp contacts</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-green-400" />
-                  <span>Workflow Automation</span>
+                  <span>Sends reminders for unbooked enquiries</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-green-400" />
-                  <span>Analytics Dashboard</span>
+                  <span>Turns "maybes" into bookings</span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-800 hover:border-yellow-400 transition-all duration-300 hover:glow-effect group">
               <Globe className="h-12 w-12 text-yellow-400 mb-6 group-hover:scale-110 transition-transform" />
-              <h3 className="text-2xl font-bold mb-4">Website Development</h3>
-              <p className="text-gray-400 mb-6">Modern, responsive websites optimized for conversions and AI integration</p>
+              <h3 className="text-2xl font-bold mb-4">📊 Performance Dashboard</h3>
+              <p className="text-gray-400 mb-6">Track your assistant's impact in real time.</p>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-green-400" />
-                  <span>Responsive Design</span>
+                  <span>View chats, bookings, and conversions</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-green-400" />
-                  <span>SEO Optimization</span>
+                  <span>Identify drop-off points</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-green-400" />
-                  <span>AI-Ready Architecture</span>
+                  <span>Optimize client journeys easily</span>
                 </li>
               </ul>
             </div>
