@@ -55,7 +55,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
-              <img src="/Public/Flowmatic.png" alt="Flowmatic AI" className="h-8 w-8" />
+              <img src="/Public/Flowmatic.png" alt="Flowmatic AI" className="h-12 w-12 rounded-full" />
               <span className="text-xl font-bold gradient-text">Flowmatic AI</span>
             </div>
             <button 
@@ -369,7 +369,7 @@ function App() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
-                <img src="/Public/Flowmatic.png" alt="Flowmatic AI" className="h-8 w-8" />
+                <img src="/Public/Flowmatic.png" alt="Flowmatic AI" className="h-12 w-12 rounded-full" />
                 <span className="text-xl font-bold gradient-text">Flowmatic AI</span>
               </div>
               <p className="text-gray-400">
