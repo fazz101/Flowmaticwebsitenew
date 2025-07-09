@@ -55,7 +55,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <img src="/Public/Flowmatic.png" alt="Flowmatic AI" className="h-12 w-12 rounded-full" />
+              <img src="/Flowmatic.png" alt="Flowmatic AI" className="h-12 w-12 rounded-full" />
             </div>
             <button 
               onClick={() => scrollToSection('contact')}
@@ -72,7 +72,7 @@ function App() {
         <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black opacity-90"></div>
         <div className={`relative z-10 text-center max-w-6xl mx-auto px-4 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="animate-float mb-8">
-            <img src="/Public/Flowmatic.png" alt="Flowmatic AI" className="h-20 w-20 mx-auto rounded-full animate-pulse-glow" />
+            <img src="/Flowmatic.png" alt="Flowmatic AI" className="h-20 w-20 mx-auto rounded-full animate-pulse-glow" />
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Transform Your Business with
@@ -368,7 +368,7 @@ function App() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
-                <img src="/Public/Flowmatic.png" alt="Flowmatic AI" className="h-12 w-12 rounded-full" />
+                <img src="/Flowmatic.png" alt="Flowmatic AI" className="h-12 w-12 rounded-full" />
                 <span className="text-xl font-bold gradient-text">Flowmatic AI</span>
               </div>
               <p className="text-gray-400">
