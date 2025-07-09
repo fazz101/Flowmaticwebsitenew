@@ -224,10 +224,11 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Why Choose <span className="gradient-text">Flowmatic AI</span>
+              Why Choose <span className="gradient-text">AutoClinic Pro</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              We deliver results that matter to your business growth
+              Built for clinics that want more bookings with less admin.<br />
+              We handle the busywork, so your team can focus on clients.
             </p>
           </div>
 
@@ -237,7 +238,7 @@ function App() {
                 <Zap className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold">Lightning Fast</h3>
-              <p className="text-gray-400">Deploy AI solutions in days, not months. Get up and running quickly with our proven frameworks.</p>
+              <p className="text-gray-400">No tech headaches. We fully build and install your smart assistant — ready to capture leads instantly.</p>
             </div>
 
             <div className="text-center space-y-4">
@@ -252,8 +253,8 @@ function App() {
               <div className="bg-gradient-to-br from-pink-500 to-yellow-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
                 <Shield className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold">Enterprise Security</h3>
-              <p className="text-gray-400">Bank-level security protocols ensure your data and customer information stays protected.</p>
+              <h3 className="text-2xl font-bold">Fully Private & Secure</h3>
+              <p className="text-gray-400">We use industry-standard encryption and private servers — your client conversations are 100% protected.</p>
             </div>
           </div>
         </div>
